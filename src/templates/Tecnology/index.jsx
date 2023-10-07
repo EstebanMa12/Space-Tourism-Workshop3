@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./main.css";
 
 export const DesktopTechnologyA = () => {
   return (
