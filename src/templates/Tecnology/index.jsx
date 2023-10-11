@@ -1,68 +1,67 @@
-import React from "react";
-import "./main.css";
+import { useState } from "react"
+import data from "../starter-code/data.json"
 
-export const DesktopTechnologyA = () => {
+export default function Technology() {
+  const [technology] = useState(data.technology)
+  const [value, setValue] = useState(0)
+
+  const { name, images, description } = technology[value]
+
   return (
-    <div className="desktop-technology-a">
-      <div className="overlap-wrapper">
-        <div className="overlap">
-          <div className="group">
-            <div className="overlap-group-wrapper">
-              <div className="overlap-group">
-                <img className="path" alt="Path" src="path.svg" />
-              </div>
+    <>
+      <section className="home technology">
+        <div className="px-5 pt-32 grid grid-cols-1 gap-5 lg:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
+          <article className="pt-5 md:pt-10 xl:pt-32 text-center md:text-left">
+            <h2 className="text-white text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
+              03
+              <span className="ml-5 font-bold">Space Launch 101</span>
+            </h2>
+
+            <div className="md:flex items-center justify-center">
+              <article className="md:mr-10 pt-5 md:pt-20">
+                <ul
+                  className="flex items-center justify-center md:flex-col mb-10"
+                  start="1"
+                >
+                  {technology.map((item, index) => (
+                    <li key={index} className="mb-5 mr-5 md:mr-0">
+                      <button
+                        onClick={() => setValue(index)}
+                        className={`bg-transparent border rounded-full w-16 h-16 text-white text-4xl ${
+                          index === value && "bg-white text-gray-900"
+                        }`}
+                      >
+                        {index + 1}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+
+              <article className="text-center md:text-left">
+                <h3 className="text-white font-light text-2xl uppercase tracking-widest mb-5 pt-5 md:pt-20">
+                  The terminology...
+                </h3>
+
+                <h2 className="text-white font-bold text-4xl lg:text-5xl uppercase tracking-widest mb-5">
+                  {name}
+                </h2>
+
+                <p className="text-white pb-5">{description}</p>
+              </article>
             </div>
-            <div className="div">
-              <div className="rectangle" />
-              <div className="rectangle-2" />
-              <div className="rectangle-3" />
-              <div className="group-2">
-                <div className="group-3">
-                  <div className="text-wrapper">01</div>
-                  <div className="text-wrapper-2">DESTINATION</div>
-                </div>
-                <div className="group-copy">
-                  <div className="text-wrapper">00</div>
-                  <div className="text-wrapper-2">HOME</div>
-                </div>
-                <div className="group-copy-2">
-                  <div className="text-wrapper">02</div>
-                  <div className="text-wrapper-2">CREW</div>
-                </div>
-                <div className="group-copy-3">
-                  <div className="text-wrapper">03</div>
-                  <div className="text-wrapper-2">TECHNOLOGY</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group-4">
-            <div className="text-wrapper-3">03</div>
-            <div className="text-wrapper-4">SPACE LAUNCH 101</div>
-          </div>
-          <div className="div-wrapper">
-            <div className="overlap-2">
-              <div className="text-wrapper-5">1</div>
-            </div>
-          </div>
-          <div className="group-copy-4">
-            <div className="text-wrapper-6">2</div>
-          </div>
-          <div className="group-copy-5">
-            <div className="text-wrapper-6">3</div>
-          </div>
-          <img className="bitmap" alt="Bitmap" src="image.jpg" />
-          <div className="group-5">
-            <div className="text-wrapper-7">LAUNCH VEHICLE</div>
-            <div className="text-wrapper-8">THE TERMINOLOGY…</div>
-            <p className="a-launch-vehicle-or">
-              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth&#39;s
-              surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
-              operation. Standing 150 metres tall, it&#39;s quite an awe-inspiring sight on the launch pad!
-            </p>
-          </div>
+          </article>
+
+          <article className="pb-10 md:pb-0">
+            <img
+              src={images.portrait}
+              alt={name}
+              title={name}
+              className="xl:absolute right-0 bottom-20 block mx-auto"
+            />
+          </article>
         </div>
-      </div>
-    </div>
-  );
-};
+      </section>
+    </>
+  )
+}
