@@ -1,5 +1,6 @@
 import { useState } from "react"
 import data from "../starter-code/data.json"
+import './main.sass'
 
 export default function Technology() {
   const [technology] = useState(data.technology)
@@ -9,12 +10,12 @@ export default function Technology() {
 
   return (
     <>
-      <section className="home technology">
-        <div className="px-5 pt-32 grid grid-cols-1 gap-5 lg:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
-          <article className="pt-5 md:pt-10 xl:pt-32 text-center md:text-left">
-            <h2 className="text-white text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
-              03
-              <span className="ml-5 font-bold">Space Launch 101</span>
+      <section className="home_technology">
+        <div className="main_container">
+          <article className="tech-content">
+            <h2 className="tech-page-title">
+              <span>03</span>
+              <p>Space Launch 101</p>
             </h2>
 
             <div className="md:flex items-center justify-center">
