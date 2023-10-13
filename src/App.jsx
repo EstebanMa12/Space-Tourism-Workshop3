@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './templates/Home/styles/mainStyle.scss'
 import Home from './templates/Home/Home.jsx'
 import Nav from './Nav.jsx'
+import Crew from './templates/Crew/Crew'
+import Destination from './templates/Destination/Destination'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,8 @@ function App() {
             <Nav/>
             <Routes>
                 {<Route path='/' element={ <Home/> } />}
+                {<Route path='Crew' element={ <Crew/> } />}
+                {<Route path='Destination' element={ <Destination/> } />}
                    
             </Routes>        
         </div>

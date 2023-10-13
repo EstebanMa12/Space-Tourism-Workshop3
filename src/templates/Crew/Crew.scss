@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body {
+  margin: 0;
+}
+
+.container-info {
+  background-image: url('https://res.cloudinary.com/dpc1vrbek/image/upload/v1696612881/Bitmap_ysr8m2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.mainTitle {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  padding-top: 88px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-weight: lighter;
+
+  span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.25; /* Opacidad del 25% */
+  }
+}
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .text-and-dots {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  p {
+    color: #D0D6F9;
+    font-family: barlow;
+    margin: 0 20px; /* Ajusta el valor del margen según tus preferencias */
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .dots-stepper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 40px;
+
+    span {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 17.44%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        opacity: 100%;
+      }
+    }
+  }
+
+  h2 {
+    font-family: "Bellefair", serif; /* Fuente */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: 400; /* Peso de fuente */
+    line-height: 28px; /* Altura de línea */
+    letter-spacing: 0px; /* Espaciado entre letras */
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+  }
+
+  h3 {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    opacity: 0.4951; /* Opacidad del 49.51% */
+    color: #fff; /* Color de texto blanco */
+    padding-top: 30px;
+  }
+
+  img {
+    margin-top: 40px;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .container-info {
+    background-image: url('https://res.cloudinary.com/dpc1vrbek/image/upload/v1697081185/Bitmap_1_aojny7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .mainTitle {
+    text-align: left;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.38px;
+    padding-top: 136px;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-left: 0;
+    font-weight: lighter;
+    padding-left: 40px;
+  }
+
+  .mainTitle span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 0;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.25; /* Opacidad del 25% */
+    font-weight: lighter;
+  }
+
+  .containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    .text-and-dots {
+      flex-direction: column;
+    }
+
+    p {
+      color: #D0D6F9;
+      font-family: barlow;
+      margin: 0 155px; /* Ajusta el valor del margen según tus preferencias */
+      line-height: 25px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .dots-stepper {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding-top: 40px;
+
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 17.44%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active {
+          opacity: 100%;
+        }
+      }
+    }
+
+    h2 {
+      font-family: "Bellefair", serif; /* Fuente */
+      font-size: 40px; /* Tamaño de fuente */
+      font-weight: 400; /* Peso de fuente */
+      line-height: 45.84px; /* Altura de línea */
+      letter-spacing: 0px; /* Espaciado entre letras */
+      text-align: center;
+      color: #fff; /* Color de texto blanco */
+      padding-top: 3px;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+
+    h3 {
+      font-family: "Bellefair";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 27.5px;
+      letter-spacing: 0px;
+      text-align: center;
+      opacity: 49.94%;
+      color: #fff;
+      padding-top: 80px;
+      padding-bottom: 10px;
+      margin: 0px;
+    }
+
+    .characters {
+      display: flex;
+
+      img {
+        margin-top: 130px;
+        width: 800px;
+        display: flex;
+        align-self: baseline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  .container-info {
+    background-image: url('https://res.cloudinary.com/dpc1vrbek/image/upload/v1697088121/Bitmap_g0qtld.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .mainTitle {
+    text-align: start;
+    margin-left: 9.5%;
+    padding-left: 0;
+  }
+
+  .mainTitle span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 0;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.25; /* Opacidad del 25% */
+    font-weight: lighter;
+  }
+
+  .containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: start;
+    margin-top: -100;
+
+    p {
+      color: #D0D6F9;
+      font-family: barlow;
+      margin: 0 155px; /* Ajusta el valor del margen según tus preferencias */
+      line-height: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: start;
+      margin-left: 8%;
+      width: 400px;
+    }
+
+    .dots-stepper {
+      padding-top: 220px;
+      position: absolute;
+      padding-left: 3.6%;
+
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 17.44%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active {
+          opacity: 100%;
+        }
+      }
+    }
+
+    h2 {
+      text-align: start;
+      margin-left: 8%;
+    }
+
+    h3 {
+      text-align: start;
+      margin-left: 8%;
+      margin-top: -100px;
+    }
+
+    .characters {
+      display: flex;
+
+      img {
+        margin-top: 50px;
+        width: 610px;
+        display: flex;
+        align-self: baseline;
+      }
+    }
+  }
+}
