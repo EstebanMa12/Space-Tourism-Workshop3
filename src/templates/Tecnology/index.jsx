@@ -14,23 +14,20 @@ export default function Technology() {
         <div className="main_container">
           <article className="tech-content">
             <h2 className="tech-page-title">
-              <span>03</span>
-              <p>Space Launch 101</p>
+              <span>03</span><p>Space Launch 101</p>
             </h2>
 
-            <div className="md:flex items-center justify-center">
-              <article className="md:mr-10 pt-5 md:pt-20">
+            <div className="TechDetails">
+              <article className="tech-button-container">
                 <ul
-                  className="flex items-center justify-center md:flex-col mb-10"
+                  className="hola"
                   start="1"
                 >
                   {technology.map((item, index) => (
-                    <li key={index} className="mb-5 mr-5 md:mr-0">
+                    <li key={index} className="tech-btn-container">
                       <button
                         onClick={() => setValue(index)}
-                        className={`bg-transparent border rounded-full w-16 h-16 text-white text-4xl ${
-                          index === value && "bg-white text-gray-900"
-                        }`}
+                        className="tech-btn"
                       >
                         {index + 1}
                       </button>
@@ -39,26 +36,26 @@ export default function Technology() {
                 </ul>
               </article>
 
-              <article className="text-center md:text-left">
-                <h3 className="text-white font-light text-2xl uppercase tracking-widest mb-5 pt-5 md:pt-20">
+              <article className="Hola mundo">
+                <h3 className="tech-title">
                   The terminology...
                 </h3>
 
-                <h2 className="text-white font-bold text-4xl lg:text-5xl uppercase tracking-widest mb-5">
+                <h2 className="tech-name">
                   {name}
                 </h2>
 
-                <p className="text-white pb-5">{description}</p>
+                <p className="tech-description">{description}</p>
               </article>
             </div>
           </article>
 
-          <article className="pb-10 md:pb-0">
+          <article className="tech-image-container">
             <img
               src={images.portrait}
               alt={name}
               title={name}
-              className="xl:absolute right-0 bottom-20 block mx-auto"
+              className="tech-image"
             />
           </article>
         </div>
