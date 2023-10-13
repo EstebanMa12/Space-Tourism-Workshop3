@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+body{
+    margin: 0; 
+    height: 100vh;
+    background-image: url('https://res.cloudinary.com/ddsed1j6u/image/upload/v1696555380/Space-Tourism-Workshop/fgdoeoxvyanqdndoykib.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-container{
+    text-align: center;
+    &__main-title{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 0;
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: #ffffffad;
+        padding-top: 68px;
+        margin-bottom: 8px;
+        &--num{color:rgb(95, 95, 95); font-weight: bold;}
+    }
+    &__dest{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__text{
+            &--names{
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                top: 20px;
+                span{
+                    font-family: 'Barlow Condensed';
+                    font-size: 16px;
+                    letter-spacing: 2.7px;
+                    color: #D0D6F9;
+                    margin: 0 13px;
+                    text-transform: uppercase;
+                    &.active{
+                        padding-bottom: 10px;
+                        border-bottom: 3px solid white;
+                        color:rgb(233, 233, 233);
+                    }
+                    &:hover{cursor: pointer;}
+                }
+            }
+            h3{
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 56px;
+                line-height: 64px;
+                margin: 70px auto 15px;
+                color:rgb(233, 233, 233);
+                font-family: 'Bellefair';
+            }
+            p{
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #D0D6F9;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            hr{
+                background-color: rgba(233, 233, 233, 0.099);
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.169);
+                width: 327px;
+                margin-top: 30px;
+            }
+            &--info{
+                display: flex;
+                gap: 20px;
+                text-transform: uppercase;
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px 0;
+                h4{
+                    font-family: 'Barlow Condensed';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 2.3625px;
+                    color: #D0D6F9;
+                    margin: 10px 0;
+                }
+                span{
+                    font-family: 'Bellefair';
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 500px){
+    body{height: 100vh ; background-image: url('https://res.cloudinary.com/ddsed1j6u/image/upload/v1697070089/Space-Tourism-Workshop/r3f1adnl9pmuk9pkeacx.png');}
+    .destination-container{
+        &__main-title{
+            justify-content: start;
+            margin-left: 40px ;
+            padding-top: 90px;
+        }
+        &__dest{
+            margin-top: 40px;
+            &--img{
+                img{width: 300px;}
+            }
+            &__text{
+                &--names{top: 35px;}
+                h3{margin-top: 85px;}
+                p{width: 70%;}
+                hr{width: 67%; margin-top: 50px;}
+                &--info{
+                    flex-direction: row;
+                    gap: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1020px){
+    body{background-image: url('https://res.cloudinary.com/ddsed1j6u/image/upload/v1697079747/Space-Tourism-Workshop/zrlsc8ucjjcfnti1tfv6.png');}
+    .destination-container{
+        &__main-title{
+            margin-left: 15%;
+        }
+        &__dest{
+            display: flex;
+            flex-direction: row;
+            margin: 0 10% 0 10%;
+            &--img{
+                width: 50%;
+                img{width: 300px; margin-top: -50px;}
+            }
+            &__text{
+                width: 50%;
+                text-align: start;
+                margin-top: -20px;
+                &--names{top: 35px; margin-left: 40px;}
+                h3{margin-left: 80px;}
+                p{width: 70%;}
+                hr{width: 67%; margin-top: 40px;}
+            }
+        }
+    }
+}
