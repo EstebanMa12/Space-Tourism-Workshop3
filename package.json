@@ -19,8 +19,13 @@
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-google-fonts": "^1.2.1",
     "sass": "^1.69.1"
+=======
+    "react-slick": "^0.29.0",
+    "sass": "^1.69.3"
+>>>>>>> refs/remotes/origin/main
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
